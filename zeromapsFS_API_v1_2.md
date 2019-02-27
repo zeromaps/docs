@@ -1,4 +1,4 @@
-# ZeromapsFS API
+# ZeromapsFS RW API
 ## 读写数据的数据类型
     ifile             //卫星影像数据
     tfile             //高程数据
@@ -79,7 +79,9 @@
     Tilt         uint32 = 7 // 倾斜摄影二维数据                                
     BulkMetaData uint32 = 8 //倾斜摄影数据索引                                 
     NodeData     uint32 = 9 //倾斜摄影数据                                     
-   
+
+
+# ZeromapsFS Manage API
 ## Cluster
 ### 获取cluster容量
 请求方式：GET
