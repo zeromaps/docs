@@ -192,7 +192,7 @@
                 "total": "3423472674",
                 "free": "2831241234",
                 "available": "3134627356"
-            }
+            },
             "status": 1
         }
     ]
@@ -484,7 +484,7 @@
     "min_ longitude": -20.7,
     "max_latitude": 68.3,
     "min_latitude": -30.3,
-    "db_type":"tfile"
+    "db_type": "tfile"
 }
 
 ```
