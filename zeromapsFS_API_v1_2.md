@@ -19,7 +19,7 @@
 
 请求地址：http://{HOST}:{PORT}/store/{storetype}/{datatype}/{key}
 
-请求示例1：http://127.0.0.1:8036/store/gqtree/ifile/0
+请求示例1：http://127.0.0.1:8036/store/gqtree/ifile/02
 
 请求示例2：http://127.0.0.1:8036/store/tms/ifile/1_1_1
 
@@ -47,7 +47,7 @@
 
 请求地址：http://{HOST}:{PORT}/store/{storetype}/{datatype}/{key}
 
-请求示例1：http://127.0.0.1:8036/store/gqtree/ifile/0
+请求示例1：http://127.0.0.1:8036/store/gqtree/ifile/02
 
 请求示例2：http://127.0.0.1:8036/store/tms/ifile/1_1_1
 
