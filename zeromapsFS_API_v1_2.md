@@ -60,7 +60,7 @@
 |   datatype  |   数据类型   |ifile,tfile,vector,q2,qp,tmifile.tilt,bulkmetadata,nodedata|
 |      key    |     索引     | gqtree读写方式用tilekey,tms读写方式用x_y_z |
 
-响应的数据格式：jpg, jpeg, png
+响应的数据格式：二进制
 
 响应码：
 
