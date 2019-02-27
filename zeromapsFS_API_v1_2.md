@@ -1,11 +1,80 @@
+# Zeromaps-storage API
+## 读写数据的数据类型
+    ifile             //卫星影像数据
+    tfile             //高程数据
+    vector            //地名及路网数据
+    q2                //卫星影像、高程、地名及路网数据的索引
+    qp                //历史影像数据索引
+    tmifile           //历史影像数据
+    tile              //倾斜摄影二维数据
+    bulkmetadata      //倾斜摄影数据的索引
+    nodedata          //倾斜摄影数据
+    
+## 读写数据的方式
+    gqtree            //tilekey方式读写
+    tms               //OGC标准的TMS协议方式读写
+    
+## 写数据
+请求方式: PUT
+
+请求地址：http://{HOST}:{PORT}/store/{storetype}/{datatype}/{key}
+
+请求示例1：http://127.0.0.1:8036/store/gqtree/ifile/0
+
+请求示例2：http://127.0.0.1:8036/store/tms/ifile/1_1_1
+
+地址参数说明：
+
+|    参数     |      描述    |
+| ----------- | ------------ |
+|    PORT   | 端口号，默认值8036 |
+|    storetype   | 读写方式，可取gqtree和tms |
+|    datatype   |  数据类型  |
+|    key   |  gqtree读写方式用tilekey，tms读写方式用x_y_z  |
+
+数据格式：二进制数据
+
+响应码：
+
+| Code | Reason |
+| ----------- | ------------ |
+| 200 - OK   | Request was successful  |
+
+## 读数据
+请求方式: GET
+
+请求地址：http://{HOST}:{PORT}/store/{storetype}/{datatype}/{key}
+
+请求示例1：http://127.0.0.1:8036/store/gqtree/ifile/0
+
+请求示例2：http://127.0.0.1:8036/store/tms/ifile/1_1_1
+
+参数说明：
+
+|      参数    |     描述    |
+| ----------- | ------------ |
+|    PORT   | 端口号，默认值8036 |
+|    storetype   | 读写方式，可取gqtree和tms |
+|    datatype   |  数据类型  |
+|    key   |  gqtree读写方式用tilekey，tms读写方式用x_y_z  |
+
+响应的数据格式：jpg,jpeg,png
+
+响应码：
+
+| Code | Reason |
+| ----------- | ------------ |
+| 200 - OK   | Request was successful  |
+
+
 # ZeromapsFS API
 ## 数据类型及其对应编号大小                                                                            
     IFile        uint32 = 1 //卫星影像数据类型                                 
     TFile        uint32 = 2 //高程数据类型                                     
     DFile        uint32 = 3 //地名及路网数据类型                               
-    Q2           uint32 = 4 //卫星、高程、地名及路网数据的索引                 
-    QP           uint32 = 5 //历史卫星影像数据索引                             
-    TMIFile      uint32 = 6 //历史卫星影像数据                                 
+    Q2           uint32 = 4 //卫星影像、高程、地名及路网数据的索引                 
+    QP           uint32 = 5 //历史影像数据索引                             
+    TMIFile      uint32 = 6 //历史影像数据                                 
     Tilt         uint32 = 7 // 倾斜摄影二维数据                                
     BulkMetaData uint32 = 8 //倾斜摄影数据索引                                 
     NodeData     uint32 = 9 //倾斜摄影数据                                     
