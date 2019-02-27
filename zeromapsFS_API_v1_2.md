@@ -23,16 +23,18 @@
 
 请求示例2：http://127.0.0.1:8036/store/tms/ifile/1_1_1
 
-地址参数说明：
+参数说明：
 
-|    参数     |      描述    |
-| ----------- | ------------ |
-|    PORT   | 端口号，默认值8036 |
-|    storetype   | 读写方式，可取gqtree和tms |
-|    datatype   |  数据类型  |
-|    key   |  gqtree读写方式用tilekey，tms读写方式用x_y_z  |
+|    参数     |      描述    |     备注    |
+| ----------- | ------------ | ------------ |
+|     PORT    |     端口号   |    默认8036   |
+|   storetype |   读写方式   |  gqtree或tms  |
+|   datatype  |   数据类型   |ifile,tfile,vector,q2,qp,tmifile.tilt,bulkmetadata,nodedata|
+|      key    |     索引     | gqtree读写方式用tilekey,tms读写方式用x_y_z |
 
-数据格式：二进制数据
+数据格式：二进制
+
+数据说明：数据放在http请求的body中
 
 响应码：
 
@@ -51,12 +53,12 @@
 
 参数说明：
 
-|      参数    |     描述    |
-| ----------- | ------------ |
-|    PORT   | 端口号，默认值8036 |
-|    storetype   | 读写方式，可取gqtree和tms |
-|    datatype   |  数据类型  |
-|    key   |  gqtree读写方式用tilekey，tms读写方式用x_y_z  |
+|    参数     |      描述    |     备注    |
+| ----------- | ------------ | ------------ |
+|     PORT    |     端口号   |    默认8036   |
+|   storetype |   读写方式   |  gqtree或tms  |
+|   datatype  |   数据类型   |ifile,tfile,vector,q2,qp,tmifile.tilt,bulkmetadata,nodedata|
+|      key    |     索引     | gqtree读写方式用tilekey,tms读写方式用x_y_z |
 
 响应的数据格式：jpg,jpeg,png
 
