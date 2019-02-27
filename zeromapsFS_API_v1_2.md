@@ -1,4 +1,4 @@
-# Zeromaps-storage API
+# ZeromapsFS API
 ## 读写数据的数据类型
     ifile             //卫星影像数据
     tfile             //高程数据
@@ -69,7 +69,6 @@
 | 200 - OK   | Request was successful  |
 
 
-# ZeromapsFS API
 ## 数据类型及其对应编号大小                                                                            
     IFile        uint32 = 1 //卫星影像数据类型                                 
     TFile        uint32 = 2 //高程数据类型                                     
