@@ -189,9 +189,9 @@
             "cpu_num": 16,
             "cpu_usage": 0.3,
             "memory_info": {
-                "total":"3423472674",
-                "free":"2831241234",
-                "available":"3134627356"
+                "total": "3423472674",
+                "free": "2831241234",
+                "available": "3134627356"
             }
             "status": 1
         }
